@@ -9,6 +9,10 @@ const reminderRoutes = require("./routes/reminderRoutes");
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("GoRead API funcionando");
+});
+
 // ✅ CORS habilitado (funciona para web y móvil)
 app.use(cors({
   origin: "*",
